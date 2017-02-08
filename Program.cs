@@ -66,7 +66,7 @@ namespace ConsoleApplication
             int [] ans = nums.ToArray();
             return ans;
         }
-        public static int greaterThanY(int [] arr, int y)
+        public static int greaterThanY(int[] arr, int y)
         {
             int count = 0;
             foreach (int num in arr)
@@ -79,7 +79,8 @@ namespace ConsoleApplication
             return count;
         }
         
-        public static Array squareTheValues(int[] arr)
+        //If you are accepting a specific array type, return that type rather than generic Array
+        public static int[] squareTheValues(int[] arr)
         {
             for (int i = 0; i < arr.Length; i++)
             {
@@ -131,6 +132,7 @@ namespace ConsoleApplication
         }
         public static Array numberToString(int[] arr)
         {
+            //This is cool!
             List<object> holder = new List<object>();
             foreach (int val in arr)
             {
